@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Ticker</td>
+                <td>Name</td>
+                <td>Shares owned</td>
+                <td>Last price</td>
+                <td>Valuation</td>
+            </tr>
+        </thead>
+            {% for dict in tickers %}
+                <tr>
+                    <td>{{ dict.ticker }}</td>
+                    <td>{{ dict.name }}</td>
+                    <td>{{ dict.total_shares }}</td>
+                    <td>{{ dict.current_price }}</td>
+                    <td>{{ dict.valuation }}</td>
+                </tr>
+            {% endfor %}
+
+    </table>
+    <br><br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Cash</td>
+                <td>Account Total</td>
+            </tr>
+        </thead>
+            <tr>
+                <td>{{ cash }}</td>
+                <td>{{ total_account }}</td>
+            </tr>
+    </table>
+{% endblock %}

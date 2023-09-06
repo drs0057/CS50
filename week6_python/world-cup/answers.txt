@@ -1,0 +1,19 @@
+Times:
+
+10 simulations: 0m0.025s
+100 simulations: 0m0.026s
+1000 simulations: 0m0.034s
+10000 simulations: 0m0.105s
+100000 simulations: 0m0.849s
+1000000 simulations: 0m8.134s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+With only 10 simulations, Portugal was ranked highest. As the amounf of simulations increased, Belgium was shown to be the best team.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+After increasing the simulations to 1000, it is clear Belgium is the top choice. For increased reliability of predictions with minimal extra computing power, 10000 simulations is more than enough.

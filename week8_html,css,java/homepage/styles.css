@@ -1,0 +1,32 @@
+body{
+    background-color: #283c4d;
+    color: #a8c5dd;
+}
+
+#visit {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  #note {
+    position: absolute;
+    bottom: 0;
+  }
+
+  li {
+    font-size: 25px;
+  }
+
+  .image {
+    width: 800px
+  }
+
+  input[type="text"] {
+    text-align: center;
+    width: 10ch;
+    background-color: #0483f2;
+  }
+
+  .translation{
+    font-size: 13px;
+  }

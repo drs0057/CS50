@@ -1,0 +1,23 @@
+sort1 uses: Bubble sort
+
+How do you know?: Bubble sort should have a significant reduction in run time between its worst case and best case scenarios. Sort1 is the only sort that matches this criteria.
+
+sort2 uses: Merge sort
+
+How do you know?: Merge sort should have significantly shorter run times across the board than all other sort scenarios (except bubble sort's best case). Sort2 matches this criteria.
+
+sort3 uses: Selection sort
+
+How do you know?: Selection sort was the last remaining option. It should also meet the criteria that the worst case and best case scenarios be fairly slow but similar values.
+
+// Times: (sort1, sort2, then sort3 were run)
+// random: 0.331s, 0.083s, 0.222s
+// reversed: 0.272s, .052s, 0.187s
+// sorted: 0.085s, 0.064s, 0.230s
+
+
+// Bubble: O(n^2) omega(n)
+
+// selection: O(n^2) omega(n^2)
+
+// merge: O(n*logn) omega(n*logn)

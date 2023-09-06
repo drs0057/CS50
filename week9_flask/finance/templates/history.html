@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Ticker</td>
+                <td>Shares</td>
+                <td>Price</td>
+                <td>Transaction type</td>
+                <td>Time</td>
+            </tr>
+        </thead>
+
+            {% for dict in transactions %}
+                <tr>
+                    <td>{{ dict.ticker }}</td>
+                    <td>{{ dict.shares_change }}</td>
+                    <td>{{ dict.price_per_share }}</td>
+                    <td>{{ dict.type }}</td>
+                    <td>{{ dict.time }}</td>
+                </tr>
+            {% endfor %}
+
+    </table>
+{% endblock %}

@@ -1,0 +1,5 @@
+I would characterize their audio aura by taking an average of all song parameters that indicate the energy of the song in some way on a spectrum.
+If all the values are low, the average will be low, indicating a low audio aura score.
+
+This way could lead to skewed results for some users. Maybe one particular user listens to lots of happy, low tempo songs. This would result in a low
+audio aura score, implying sad music. One way to fix this issue is to get rid of the parameter that dominates the calculation; in this case tempo.

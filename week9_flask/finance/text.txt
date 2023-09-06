@@ -1,0 +1,9 @@
+CREATE TABLE transactions (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, user TEXT NOT NULL, ticker TEXT NOT NULL, price_per_share NUMERIC NOT NULL, shares NUMERIC NOT NULL, time TEXT NOT NULL);
+
+INSERT INTO transactions (user, ticker, price_per_share, shares, time) VALUES ('Derek', 'ICLN', 16.00, 9, 'may');
+
+ALTER TABLE table_name ADD COLUMN column_name data_type;
+
+SELECT ticker, SUM(shares_change) as total_shares FROM transactions WHERE user = 'Derek' GROUP BY ticker HAVING total_shares > 0;
+
+SELECT ticker, SUM(shares) as total_shares FROM transactions WHERE user = ? AND ticker = ? GROUP BY ticker", 'Derek', 'APPL');
